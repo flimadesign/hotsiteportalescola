@@ -1,12 +1,12 @@
 {
   "name": "hotsiteportalescola",
   "version": "1.0.0",
-  "description": "",
+  "description": "Top da balada",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "babel": "babel src/js --out-file dist/script.js -w",
-    "sass": "sass --watch src/sass/style.scss:dist/style.css"
+    "babel": "babel src/js --out-file dist/js/script.js -w",
+    "sass": "sass --watch src/sass/style.scss:dist/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/flimadesign/hotsiteportalescola#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1"
+    "babel-preset-es2015": "^6.24.1",
+    "bootstrap-sass": "^3.3.7"
   }
 }
