@@ -1,8 +1,107 @@
 @charset "UTF-8";
-/*Est├í dando erro*/
-/*@import "bootstrap";*/
-html, body {
+@import url(../themify-icons/themify-icons.css);
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf); }
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../fonts/Montserrat/Montserrat-Bold.ttf); }
+html {
   height: 100%; }
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flex;
+  display: -webkit-flex;
+  min-height: 100%;
+  flex-direction: column; }
+
+#app {
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  flex: 1 0 auto;
+  display: flex;
+  display: -webkit-flex; }
+
+.box-topo {
+  flex-direction: row;
+  flex: 1 0 auto;
+  display: flex;
+  height: 90vh;
+  min-height: 600px;
+  position: relative;
+  display: -webkit-flex;
+  background-color: #15578e;
+  padding: 40px;
+  margin-bottom: -80px; }
+
+@media screen and (max-width: 850px) {
+  .box-topo {
+    flex-direction: column; }
+
+  .capa-app {
+    border-radius: 8px 8px 0 0 !important;
+    width: 100% !important;
+    height: 100%;
+    min-width: 300px !important; }
+
+  .imagem-capa-app {
+    border-top: 0 !important;
+    height: 100%;
+    border-radius: 0 0 8px 8px !important;
+    min-width: 300px !important; } }
+.logo {
+  width: 160px !important; }
+
+.capa-app {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  min-width: 400px;
+  border-top: 5px solid #e86f5f;
+  border-radius: 8px 0 0 8px;
+  z-index: 2;
+  padding: 40px;
+  justify-content: space-between; }
+
+.imagem-capa-app {
+  /*background-color: #a9e0eb;*/
+  background-image: url(../img/img-capa.jpg);
+  display: flex;
+  width: 100%;
+  border-top: 5px solid #e86f5f;
+  border-radius: 0 8px 8px 0;
+  z-index: 2;
+  color: #fff;
+  font-size: 155px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; }
+
+.description {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0699f4+0,06c7f4+100 */
+  background: #0699f4;
+  height: 700px;
+  position: relative;
+  margin-top: -60px;
+  padding: 60px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+h1 {
+  color: #fff;
+  font-size: 55px;
+  font-family: 'Montserrat-Bold', sans-serif; }
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px; }
 
 section {
   display: inline-block; }
@@ -60,5 +159,101 @@ article ul {
 
 article li {
   display: inline-block; }
+
+.btn {
+  display: inline-block;
+  height: 35px;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 0 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 100%; }
+
+button:active {
+  outline: none !important; }
+
+button:focus {
+  outline: 0 !important; }
+
+a:active {
+  outline: none !important; }
+
+a:focus {
+  outline: 0 !important; }
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #5097dc;
+  border-color: transparent; }
+
+.btn-primary:focus {
+  color: #ffffff;
+  background-color: #4386c8;
+  border-color: transparent; }
+
+.btn-primary:hover {
+  color: #ffffff;
+  background-color: #4386c8;
+  border-color: transparent; }
+
+.box-info {
+  border: 1px solid #95d7f3;
+  border-radius: 10px; }
+
+@keyframes setinha {
+  0% {
+    transform: translateY(0px); }
+  60% {
+    transform: translateY(10px); }
+  100% {
+    transform: translateY(0px); } }
+.setinha {
+  animation-name: setinha;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
+
+@keyframes lateral-topo {
+  from {
+    width: 0%;
+    transform-origin: right; }
+  to {
+    width: 100%; } }
+.lateral-topo {
+  animation-name: lateral-topo;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out; }
+
+@keyframes titulos {
+  0% {
+    transform: translateY(45px);
+    opacity: 0; }
+  60% {
+    transform: translateY(-10px);
+    opacity: 1; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
+.titulos {
+  animation-name: titulos;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out; }
 
 /*# sourceMappingURL=style.css.map */

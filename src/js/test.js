@@ -16,8 +16,9 @@ bob.printFriends()
 
 */
 
-var color = () => console.log('red')
+/*var color = () => console.log('red')
 color()
+
 
 
 let bob = {
@@ -29,10 +30,10 @@ let bob = {
 }
 
 bob.printFriends()
-
+*/
 /* Class */
 
-class Colors {
+/*class Colors {
 	constructor(codeColor, nameColor) {
 		this.codeColor = codeColor,
 		this.nameColor = nameColor
@@ -47,4 +48,10 @@ class Colors {
 
 let red = new Colors('red', 'Vermelho')
 console.log(red.getColor())
+*/
 
+
+
+/*import {foo, bar} from "dep";
+console.log(bar);
+foo();*/

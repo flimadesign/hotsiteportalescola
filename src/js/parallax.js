@@ -7,6 +7,5 @@ $(function(){
 			var bgpos = '50% '+ yPos + 'px';
 			$obj.css('background-position', bgpos );
 		});
-
 	});
 });
