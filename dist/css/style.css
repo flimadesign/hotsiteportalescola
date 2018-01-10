@@ -31,7 +31,7 @@ body {
   flex-direction: row;
   flex: 1 0 auto;
   display: flex;
-  height: 90vh;
+  height: 91vh;
   min-height: 600px;
   position: relative;
   display: -webkit-flex;
@@ -44,16 +44,18 @@ body {
     flex-direction: column; }
 
   .capa-app {
-    border-radius: 8px 8px 0 0 !important;
+    border-radius: 15px 15px 0 0 !important;
     width: 100% !important;
-    height: 100%;
-    min-width: 300px !important; }
+    height: 100%; }
 
   .imagem-capa-app {
-    border-top: 0 !important;
-    height: 100%;
-    border-radius: 0 0 8px 8px !important;
-    min-width: 300px !important; } }
+    display: none; } }
+@media screen and (max-width: 480px) {
+  .box-topo {
+    padding: 0 0 40px 0; }
+
+  .capa-app {
+    border-radius: 0 !important; } }
 .logo {
   width: 160px !important; }
 
@@ -61,21 +63,22 @@ body {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  width: 40%;
-  min-width: 400px;
+  width: 100%;
   border-top: 5px solid #e86f5f;
-  border-radius: 8px 0 0 8px;
+  border-radius: 15px 0 0 15px;
   z-index: 2;
-  padding: 40px;
+  /*padding: 40px;*/
   justify-content: space-between; }
 
 .imagem-capa-app {
   /*background-color: #a9e0eb;*/
   background-image: url(../img/img-capa.jpg);
+  background-position-x: center;
+  background-position-y: center;
   display: flex;
   width: 100%;
   border-top: 5px solid #e86f5f;
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 15px 15px 0;
   z-index: 2;
   color: #fff;
   font-size: 155px;
@@ -101,7 +104,7 @@ h1 {
 
 p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px; }
+  font-size: 14px; }
 
 section {
   display: inline-block; }
@@ -160,9 +163,14 @@ article ul {
 article li {
   display: inline-block; }
 
+/*#222*/
+/*#333*/
+/*#555*/
+/*#777*/
+/*#eee*/
 .btn {
   display: inline-block;
-  height: 35px;
+  height: 45px;
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
@@ -170,21 +178,28 @@ article li {
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
-  border: 1px solid transparent;
+  border: transparent;
   white-space: nowrap;
   padding: 0 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat-Bold', sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 12px;
-  border-radius: 20px;
+  font-weight: 900;
+  font-size: 13px;
+  border-radius: 45px;
   -webkit-user-select: none;
   -moz-user-select: none;
+  padding: 0 20px;
   -ms-user-select: none;
   user-select: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  width: 100%; }
+  color: #fff; }
+
+.btn:hover {
+  filter: brightness(85%); }
+
+.btn:focus {
+  filter: brightness(75%); }
 
 button:active {
   outline: none !important; }
@@ -199,19 +214,10 @@ a:focus {
   outline: 0 !important; }
 
 .btn-primary {
-  color: #ffffff;
-  background-color: #5097dc;
-  border-color: transparent; }
+  background-color: #0699f4; }
 
-.btn-primary:focus {
-  color: #ffffff;
-  background-color: #4386c8;
-  border-color: transparent; }
-
-.btn-primary:hover {
-  color: #ffffff;
-  background-color: #4386c8;
-  border-color: transparent; }
+.btn-info {
+  background-color: #e86f5f; }
 
 .box-info {
   border: 1px solid #95d7f3;
@@ -232,13 +238,12 @@ a:focus {
 
 @keyframes lateral-topo {
   from {
-    width: 0%;
-    transform-origin: right; }
+    width: 0%; }
   to {
     width: 100%; } }
 .lateral-topo {
   animation-name: lateral-topo;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: ease-in-out; }
 
 @keyframes titulos {
@@ -255,5 +260,17 @@ a:focus {
   animation-name: titulos;
   animation-duration: 1s;
   animation-timing-function: ease-in-out; }
+
+.space-button {
+  display: block;
+  margin: 5px; }
+
+.titulo-top {
+  font-family: 'Montserrat-Bold', sans-serif;
+  /*text-transform: uppercase;*/
+  font-size: 60px;
+  color: #000;
+  letter-spacing: -3px;
+  line-height: 60px; }
 
 /*# sourceMappingURL=style.css.map */
