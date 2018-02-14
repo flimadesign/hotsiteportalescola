@@ -31,13 +31,13 @@ body {
   flex-direction: row;
   flex: 1 0 auto;
   display: flex;
-  height: 91vh;
+  height: 93vh;
   min-height: 600px;
   position: relative;
   display: -webkit-flex;
-  background-color: #15578e;
-  padding: 40px;
-  margin-bottom: -80px; }
+  background-color: #004a87;
+  padding: 30px;
+  margin-bottom: -70px; }
 
 @media screen and (max-width: 850px) {
   .box-topo {
@@ -49,13 +49,20 @@ body {
     height: 100%; }
 
   .imagem-capa-app {
-    display: none; } }
+    display: none; }
+
+  .container-box {
+    flex-direction: column !important; } }
 @media screen and (max-width: 480px) {
   .box-topo {
     padding: 0 0 40px 0; }
 
   .capa-app {
-    border-radius: 0 !important; } }
+    border-radius: 0 !important; }
+
+  .titulo-top {
+    font-size: 45px !important;
+    line-height: 45px !important; } }
 .logo {
   width: 160px !important; }
 
@@ -64,20 +71,16 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  border-top: 5px solid #e86f5f;
   border-radius: 15px 0 0 15px;
   z-index: 2;
-  /*padding: 40px;*/
   justify-content: space-between; }
 
 .imagem-capa-app {
-  /*background-color: #a9e0eb;*/
   background-image: url(../img/img-capa.jpg);
   background-position-x: center;
   background-position-y: center;
   display: flex;
   width: 100%;
-  border-top: 5px solid #e86f5f;
   border-radius: 0 15px 15px 0;
   z-index: 2;
   color: #fff;
@@ -86,9 +89,8 @@ body {
   font-weight: 700; }
 
 .description {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0699f4+0,06c7f4+100 */
   background: #0699f4;
-  height: 700px;
+  height: 400px;
   position: relative;
   margin-top: -60px;
   padding: 60px;
@@ -112,13 +114,12 @@ section {
 /*Para ajustar padr├úo do chrome*/
 /** formata elementos que tem backgrounds parallax **/
 .parallax {
-  font-family: 'tahoma', sans-serif;
+  font-family: 'Montserrat-Bold', sans-serif;
   color: #FFF;
   margin: 0 auto;
   width: 100%;
   position: relative;
   min-height: 100%;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-attachment: fixed; }
@@ -132,20 +133,15 @@ section {
 
 /** Formata o article que vai o texto **/
 .parallax article {
-  width: 70%;
+  width: 100%;
   text-align: center;
   margin: 0 auto; }
 
 #home article {
-  padding: 20% 0 0; }
+  padding: 180px 0; }
 
-#portfolio article {
-  padding: 15% 0 0; }
-
+/*#portfolio article { padding: 15% 0 0;}*/
 /** formata texto **/
-article header {
-  margin-bottom: 30px; }
-
 article h1 {
   font-size: 40px; }
 
@@ -170,7 +166,7 @@ article li {
 /*#eee*/
 .btn {
   display: inline-block;
-  height: 45px;
+  height: 35px;
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
@@ -195,12 +191,6 @@ article li {
   transition: all 0.3s ease;
   color: #fff; }
 
-.btn:hover {
-  filter: brightness(85%); }
-
-.btn:focus {
-  filter: brightness(75%); }
-
 button:active {
   outline: none !important; }
 
@@ -216,12 +206,32 @@ a:focus {
 .btn-primary {
   background-color: #0699f4; }
 
+.btn-primary:hover {
+  background-color: #38adf6; }
+
 .btn-info {
   background-color: #e86f5f; }
 
+.btn-info:hover {
+  background-color: #ed8c7f; }
+
 .box-info {
-  border: 1px solid #95d7f3;
-  border-radius: 10px; }
+  border: 1px solid #bbccd8;
+  border-radius: 10px;
+  display: flex;
+  margin: 15px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif; }
+
+.container-box {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  padding: 40px; }
 
 @keyframes setinha {
   0% {
@@ -259,7 +269,8 @@ a:focus {
 .titulos {
   animation-name: titulos;
   animation-duration: 1s;
-  animation-timing-function: ease-in-out; }
+  animation-timing-function: ease-in-out;
+  font-size: 38px; }
 
 .space-button {
   display: block;
@@ -272,5 +283,19 @@ a:focus {
   color: #000;
   letter-spacing: -3px;
   line-height: 60px; }
+
+footer {
+  background-color: #133654;
+  height: 200px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center; }
+
+footer p {
+  font-size: 12px !important; }
+
+.center-content {
+  display: flex;
+  justify-content: center; }
 
 /*# sourceMappingURL=style.css.map */
